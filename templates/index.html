@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroCommerce Engine | Advanced AI Inventory Intelligence</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        :root {
+            --glass-bg: rgba(255, 255, 255, 0.85);
+            --glass-border: rgba(226, 232, 240, 0.8);
+            --primary-gradient: linear-gradient(135deg, #4318ff 0%, #868cff 100%);
+            --sidebar-color: #0b1437;
+            --card-shadow: 0px 20px 50px rgba(112, 144, 176, 0.08);
+            --text-main: #1b2559;
+            --text-secondary: #a3aed0;
+            --bg-global: #f4f7fe;
+        }
+
+        body.dark-theme {
+            --glass-bg: rgba(17, 24, 63, 0.95);
+            --glass-border: rgba(255, 255, 255, 0.05);
+            --sidebar-color: #080f28;
+            --card-shadow: 0px 20px 50px rgba(0, 0, 0, 0.3);
+            --text-main: #ffffff;
+            --text-secondary: #707eae;
+            --bg-global: #0b1437;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-global);
+            color: var(--text-main);
+            transition: background-color 0.4s ease, color 0.4s ease;
+            overflow-x: hidden;
+        }
+
+        /* --- UI Components Layout --- */
+        .sidebar-wrapper {
+            width: 290px;
+            height: 100vh;
+            background: var(--sidebar-color);
+            position: fixed;
+            top: 0; left: 0;
+            z-index: 100;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border-right: 1px solid var(--glass-border);
+            box-shadow: 10px 0px 40px rgba(0,0,0,0.03);
+        }
+
+        .brand-logo {
+            padding: 30px 24px;
+            font-weight: 800;
+            font-size: 1.4rem;
+            background: linear-gradient(to right, #fff, #a3aed1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: flex; align-items: center; gap: 12px;
+        }
+
+        .sidebar-nav .nav-link {
+            color: var(--text-secondary);
+            padding: 14px 18px; margin: 6px 20px;
+            border-radius: 16px; font-weight: 600;
+            display: flex; align-items: center; gap: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .sidebar-nav .nav-link:hover, .sidebar-nav .nav-link.active {
+            color: #ffffff;
+            transform: translateX(4px);
+        }
+
+        .sidebar-nav .nav-link.active {
+            background: var(--primary-gradient);
+            box-shadow: 0px 10px 25px rgba(67, 24, 255, 0.3);
+        }
+
+        .main-viewport { margin-left: 290px; padding: 40px; min-height: 100vh; transition: all 0.4s ease; }
+
+        .glass-navbar {
+            background: var(--glass-bg); backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border); border-radius: 30px;
+            padding: 15px 30px; margin-bottom: 35px; box-shadow: var(--card-shadow);
+        }
+
+        .search-container input {
+            background: var(--bg-global); border: 1px solid var(--glass-border);
+            color: var(--text-main); border-radius: 20px;
+            padding: 10px 20px 10px 45px; width: 350px; transition: all 0.3s;
+        }
+        
+        .search-container input:focus { border-color: #4318ff; outline: none; box-shadow: 0 0 0 3px rgba(67, 24, 255, 0.15); }
+
+        .premium-card {
+            background: var(--glass-bg); backdrop-filter: blur(15px);
+            border: 1px solid var(--glass-border); border-radius: 24px;
+            padding: 25px; box-shadow: var(--card-shadow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .premium-card:hover { transform: translateY(-5px); box-shadow: 0px 30px 60px rgba(112, 144, 176, 0.15); }
+
+        .card-icon-frame { width: 56px; height: 56px; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 1.4rem; }
+
+        .custom-data-table { background: var(--glass-bg); border-radius: 24px; border: 1px solid var(--glass-border); overflow: hidden; box-shadow: var(--card-shadow); }
+        .custom-data-table th { background: rgba(112, 144, 176, 0.05); color: var(--text-secondary); font-weight: 700; text-transform: uppercase; font-size: 0.75rem; padding: 18px 24px; border: none; }
+        .custom-data-table td { padding: 20px 24px; border-bottom: 1px solid var(--glass-border); font-weight: 600; }
+
+        .drag-drop-box { border: 2px dashed #4318ff; background: rgba(67, 24, 255, 0.02); border-radius: 24px; padding: 60px 30px; cursor: pointer; transition: all 0.3s; }
+        .drag-drop-box:hover, .drag-drop-box.dragover { background: rgba(67, 24, 255, 0.07); border-color: #868cff; }
+        
+        .ai-terminal { background: #050b24; color: #00f2fe; font-family: 'Courier New', Courier, monospace; border-radius: 16px; padding: 25px; height: 250px; overflow-y: auto; text-align: left; box-shadow: inset 0 0 15px rgba(0,0,0,0.5); }
+        .pulse-glowing-red { box-shadow: 0 0 0 0 rgba(238, 93, 80, 0.7); animation: pulseRed 2s infinite; }
+        @keyframes pulseRed { 0% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(238, 93, 80, 0.4); } 70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(238, 93, 80, 0); } 100% { transform: scale(0.98); box-shadow: 0 0 0 0 rgba(238, 93, 80, 0); } }
+
+        .toast-container { z-index: 1055; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar-wrapper">
+        <div class="brand-logo">
+            <div class="bg-primary p-2 rounded-3 d-inline-flex justify-content-center align-items-center" style="width:40px; height:40px;">
+                <i class="fas fa-brain text-white fs-5"></i>
+            </div>
+            <span>NeuroCommerce</span>
+        </div>
+        <ul class="nav flex-column sidebar-nav mt-4">
+            <li class="nav-item"><a href="#" class="nav-link active" id="nav-dash" onclick="switchSystemTab('dashboard')"><i class="fas fa-chart-pie fs-5"></i> Dashboard</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav-inventory" onclick="switchSystemTab('inventory')"><i class="fas fa-warehouse fs-5"></i> Stock Operations</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav-ai" onclick="switchSystemTab('ai-engine')"><i class="fas fa-microchip fs-5"></i> AI Training & Data</a></li>
+            <li class="nav-item"><a href="#" class="nav-link" id="nav-logs" onclick="switchSystemTab('logs')"><i class="fas fa-terminal fs-5"></i> System Framework</a></li>
+        </ul>
+    </div>
+
+    <div class="main-viewport">
+        <div class="glass-navbar d-flex justify-content-between align-items-center animate__animated animate__fadeInDown">
+            <div class="search-container position-relative">
+                <i class="fas fa-search position-absolute text-muted" style="left: 20px; top: 15px;"></i>
+                <input type="text" id="globalProductSearch" placeholder="Search smart inventory matrix..." onkeyup="filterInventoryGridTable(this.value)" placeholder="Search products directly...">
+            </div>
+            <div class="d-flex align-items-center gap-4">
+                <button class="btn btn-link text-decoration-none p-0" onclick="toggleEngineTheme()"><i class="fas fa-moon fs-4 text-muted" id="themeCtrlIcon"></i></button>
+                <div class="d-flex align-items-center gap-3 border-start ps-4">
+                    <img src="https://ui-avatars.com/api/?name=Team+ML&background=4318ff&color=fff" class="rounded-circle shadow-sm" width="42" alt="Profile">
+                    <div>
+                        <h6 class="mb-0 fw-bold small">Team_ML</h6>
+                        <span class="text-muted extra-small" style="font-size: 0.75rem;">System Architect</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="dashboard-view" class="animate__animated animate__fadeIn">
+            <div class="row g-4 mb-4">
+                <div class="col-md-3"><div class="premium-card d-flex justify-content-between" id="kpi-products"><div><span class="text-muted small fw-bold mb-1 d-block">PRODUCTS</span><h2 class="fw-bold mb-0">...</h2></div><div class="card-icon-frame bg-primary bg-opacity-10 text-primary"><i class="fas fa-cubes"></i></div></div></div>
+                <div class="col-md-3"><div class="premium-card pulse-glowing-red d-flex justify-content-between" id="kpi-lowstock"><div><span class="text-muted small fw-bold mb-1 d-block">CRITICAL ALERTS</span><h2 class="fw-bold mb-0 text-danger">...</h2></div><div class="card-icon-frame bg-danger bg-opacity-10 text-danger"><i class="fas fa-circle-exclamation"></i></div></div></div>
+                <div class="col-md-3"><div class="premium-card d-flex justify-content-between" id="kpi-accuracy"><div><span class="text-muted small fw-bold mb-1 d-block">AI CONFIDENCE</span><h2 class="fw-bold mb-0 text-success">...</h2></div><div class="card-icon-frame bg-success bg-opacity-10 text-success"><i class="fas fa-shield-halved"></i></div></div></div>
+                <div class="col-md-3"><div class="premium-card d-flex justify-content-between" id="kpi-valuation"><div><span class="text-muted small fw-bold mb-1 d-block">DEMAND VAL</span><h2 class="fw-bold mb-0 text-primary">...</h2></div><div class="card-icon-frame bg-info bg-opacity-10 text-info"><i class="fas fa-arrow-trend-up"></i></div></div></div>
+            </div>
+            <div class="row g-4 mb-4">
+                <div class="col-md-8"><div class="premium-card"><h5 class="fw-bold mb-4">Analytical Demand Forecast</h5><canvas id="deepDemandForecastChart" height="120"></canvas></div></div>
+                <div class="col-md-4"><div class="premium-card"><h5 class="fw-bold mb-4">Stock Health Matrix</h5><canvas id="stockDistributionMatrixPie" height="230"></canvas></div></div>
+            </div>
+        </div>
+
+        <div id="inventory-view" class="d-none animate__animated animate__fadeIn">
+            <div class="custom-data-table p-4">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <h4 class="fw-bold mb-1">Smart Inventory Grid Database</h4>
+                        <p class="text-muted small mb-0">Live deployment metrics from server data streams</p>
+                    </div>
+                    <button class="btn btn-primary rounded-3 px-4 py-2" onclick="triggerSysNotification('Registration restricted to secure dataset streaming uploads.', 'warning')"><i class="fas fa-plus me-2"></i> Register Product</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0" id="inventoryDataTable">
+                        <thead><tr><th>Asset ID</th><th>Product Details</th><th>Current Stock</th><th>Predicted Demand</th><th>Safety Bar</th><th>Action Execution</th></tr></thead>
+                        <tbody><tr><td colspan="6" class="text-center text-muted py-4"><i class="fas fa-spinner fa-spin me-2"></i> Synchronizing matrix data...</td></tr></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="ai-engine-view" class="d-none animate__animated animate__fadeIn">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="premium-card text-center py-5">
+                        <i class="fas fa-cloud-arrow-up text-primary fs-1 mb-4 animate__animated animate__pulse animate__infinite"></i>
+                        <h4 class="fw-bold">Dataset Stream Upload</h4>
+                        <p class="text-muted small px-4">Upload retail transaction registers `.csv` format to update parameters</p>
+                        <input type="file" id="fileInput" class="d-none" accept=".csv">
+                        <div class="drag-drop-box mx-4 mb-3" id="dropZone" onclick="document.getElementById('fileInput').click()">
+                            <i class="fas fa-file-csv fs-2 text-muted mb-2"></i><h6 id="uploadBoxText">Drop retail ledger files here or click to browse</h6>
+                        </div>
+                        <div class="px-4 d-none" id="trainingProgressTrackerBarFrame">
+                            <div class="progress mb-2" style="height: 12px;"><div id="liveSimulationProgressBarElement" class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 0%"></div></div>
+                            <span class="extra-small text-muted" id="uploadStatusLabel">Processing Pipeline Configuration...</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="premium-card h-100">
+                        <h5 class="fw-bold mb-3">Compiler Terminal Logs</h5>
+                        <div class="ai-terminal" id="liveTerminalOutputScreenLogBox">
+                            [SYSTEM READY] NeuroCommerce core intelligence interface standing by.<br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="logs-view" class="d-none animate__animated animate__fadeIn">
+            <div class="premium-card mb-4">
+                <h4 class="fw-bold mb-3">System Framework Compliance</h4>
+                <div class="row g-4 mt-2">
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded-3 bg-light bg-opacity-10 h-100">
+                            <h6 class="fw-bold text-success"><i class="fas fa-leaf me-2"></i> Green Computing Design</h6>
+                            <p class="small text-muted mb-2">By engineering a localized Random Forest Regressor ecosystem instead of power-hungry deep learning architectures, computational resource demands are structurally optimized.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-3 bg-dark bg-opacity-25 p-2 rounded-2 border border-success border-opacity-20">
+                                <span class="small fw-bold text-success">Estimated CPU Reduction</span>
+                                <span class="badge bg-success font-monospace">~74.2% Savings</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded-3 bg-light bg-opacity-10 h-100">
+                            <h6 class="fw-bold text-primary"><i class="fas fa-microchip me-2"></i> Engineering Architecture</h6>
+                            <p class="small text-muted mb-0">The system deploys an asynchronous state validation routine that updates the local document storage structure dynamically upon single product restock triggers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="premium-card">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <i class="fas fa-graduation-cap text-primary fs-3"></i>
+                    <h5 class="fw-bold mb-0">Project Registration Dossier</h5>
+                </div>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="text-secondary small fw-bold text-uppercase d-block mb-1">Project Title</label>
+                        <p class="fw-bold text-primary mb-3">NeuroCommerce: AI-Driven Retail Automation and Inventory Intelligence Platform</p>
+                        
+                        <label class="text-secondary small fw-bold text-uppercase d-block mb-1">Academic Affiliation</label>
+                        <p class="fw-bold mb-3">Varendra University<br><span class="text-muted font-monospace small">Department of Computer Science and Engineering</span></p>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="text-secondary small fw-bold text-uppercase d-block mb-1">Development Team Matrix</label>
+                        <ul class="list-unstyled mb-3 text-muted small">
+                            <li class="mb-2"><i class="fas fa-user-gear me-2 text-primary"></i><strong>Oloc Chandro (Partha)</strong> <span class="font-monospace ms-2">(ID: 232311131)</span></li>
+                            <li class="mb-2"><i class="fas fa-user-check me-2 text-primary"></i><strong>Partho Kumar Ray</strong> <span class="font-monospace ms-2">(ID: 232311136)</span></li>
+                            <li class="mb-2"><i class="fas fa-user-check me-2 text-primary"></i><strong>Pritom Kumar Pramanik</strong> <span class="font-monospace ms-2">(ID: 232311137)</span></li>
+                        </ul>
+                        <label class="text-secondary small fw-bold text-uppercase d-block mb-1">Project Supervisor</label>
+                        <p class="fw-bold text-dark-emphasis small mb-0"><i class="fas fa-user-tie me-2 text-secondary"></i>Barisha Chowdhury, Lecturer (Dept. of CSE)</p>
+                        <p class="fw-bold text-dark-emphasis small mb-0"><i class="fas fa-user-tie me-2 text-secondary"></i>Jamil Choudhury, Lecturer (Dept. of CSE)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="systemToast" class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessage"></div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let chartInstances = { forecast: null, matrix: null };
+
+        document.addEventListener("DOMContentLoaded", initializeNeuroEngine);
+
+        async function initializeNeuroEngine() {
+            logToTerminal("[PIPELINE] Booting engines and initiating telemetry synchronization...");
+            await Promise.all([syncDashboardMetrics(), syncInventoryMatrixTable()]);
+        }
+
+        // Professional Notification System
+        function triggerSysNotification(message, type = 'success') {
+            const toastEl = document.getElementById('systemToast');
+            const toastMsg = document.getElementById('toastMessage');
+            
+            toastEl.className = `toast align-items-center text-white border-0 bg-${type}`;
+            toastMsg.innerHTML = `<i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'danger' ? 'fa-exclamation-triangle' : 'fa-info-circle'} me-2"></i> ${message}`;
+            
+            const toast = new bootstrap.Toast(toastEl, { delay: 3500 });
+            toast.show();
+        }
+
+        function logToTerminal(message) {
+            const logBox = document.getElementById('liveTerminalOutputScreenLogBox');
+            if (logBox) {
+                const timestamp = new Date().toISOString().slice(11, 19);
+                logBox.innerHTML += `[${timestamp}] ${message}<br>`;
+                logBox.scrollTop = logBox.scrollHeight;
+            }
+        }
+
+        async function syncDashboardMetrics() {
+            try {
+                const response = await fetch('/api/dashboard-core');
+                if(!response.ok) throw new Error("API Connection Failed");
+                const result = await response.json();
+                
+                if (result.status === "success") {
+                    document.getElementById('kpi-products').querySelector('h2').innerText = result.kpi.total_products;
+                    document.getElementById('kpi-lowstock').querySelector('h2').innerText = result.kpi.low_stock;
+                    document.getElementById('kpi-accuracy').querySelector('h2').innerText = result.kpi.accuracy;
+                    document.getElementById('kpi-valuation').querySelector('h2').innerText = result.kpi.valuation;
+                    
+                    renderCharts(result.charts);
+                    logToTerminal("[TELEMETRY] Global operational KPIs loaded successfully.");
+                } else if(result.status === "empty") {
+                    logToTerminal("[WARN] Datastream empty. Machine Learning optimization pending upload.");
+                }
+            } catch (error) {
+                console.error("Dashboard Metrics Failure:", error);
+                triggerSysNotification("Backend execution node offline.", "danger");
+            }
+        }
+
+        async function syncInventoryMatrixTable() {
+            try {
+                const response = await fetch('/api/inventory-matrix');
+                if(!response.ok) throw new Error("Database Routing Failure");
+                const matrixData = await response.json();
+                const tableBody = document.querySelector("#inventoryDataTable tbody");
+                
+                if(!matrixData || matrixData.length === 0) {
+                    tableBody.innerHTML = `<tr><td colspan="6" class="text-center text-muted py-4"><i class="fas fa-folder-open me-2"></i> No active ledger records. Use 'AI Training & Data' interface to stream values.</td></tr>`;
+                    return;
+                }
+
+                tableBody.innerHTML = "";
+                matrixData.forEach(item => {
+                    const isRestock = item.status === "Restock Needed";
+                    const btnHtml = isRestock 
+                        ? `<button class="btn btn-sm btn-danger rounded-2 px-3 shadow-sm font-monospace" style="font-size:0.8rem;" onclick="triggerRestockOperation('${item.raw_id}', this)">RE-ORDER</button>`
+                        : `<button class="btn btn-sm btn-outline-secondary rounded-2 px-3" style="font-size:0.8rem;" disabled><i class="fas fa-shield me-1"></i>Secure</button>`;
+                    
+                    const progressColor = isRestock ? "bg-danger" : item.status === "Warning" ? "bg-warning" : "bg-success";
+                    
+                    tableBody.innerHTML += `
+                        <tr class="inventory-row" data-name="${item.name.toLowerCase()}" data-id="${item.asset_id.toLowerCase()}">
+                            <td><span class="text-secondary font-monospace small fw-bold">${item.asset_id}</span></td>
+                            <td><span class="fw-bold">${item.name}</span></td>
+                            <td><span class="badge bg-light text-dark px-2 py-1 border font-monospace">${item.stock} Units</span></td>
+                            <td class="text-primary fw-bold font-monospace">${item.predicted}</td>
+                            <td>
+                                <div class="d-flex align-items-center gap-2">
+                                    <div class="progress flex-grow-1" style="height: 6px;"><div class="progress-bar ${progressColor}" style="width: ${Math.min((item.stock/200)*100, 100)}%"></div></div>
+                                    <small class="extra-small text-muted font-monospace">${item.status}</small>
+                                </div>
+                            </td>
+                            <td>${btnHtml}</td>
+                        </tr>`;
+                });
+            } catch (error) {
+                document.querySelector("#inventoryDataTable tbody").innerHTML = `<tr><td colspan="6" class="text-center text-danger"><i class="fas fa-triangle-exclamation me-2"></i>Matrix integration synchronization offline.</td></tr>`;
+            }
+        }
+
+        // Live Filtering Logic
+        function filterInventoryGridTable(query) {
+            const normalizedQuery = query.toLowerCase().trim();
+            const rows = document.querySelectorAll(".inventory-row");
+            rows.forEach(row => {
+                const name = row.getAttribute("data-name");
+                const assetId = row.getAttribute("data-id");
+                if(name.includes(normalizedQuery) || assetId.includes(normalizedQuery)) {
+                    row.classList.remove("d-none");
+                } else {
+                    row.classList.add("d-none");
+                }
+            });
+        }
+
+        function filterInventoryTable() {
+            // Mapping top bar filter parameter globally to avoid dead inputs
+            const globalQuery = document.getElementById("globalProductSearch").value;
+            filterInventoryGridTable(globalQuery);
+        }
+
+        async function triggerRestockOperation(productId, element) {
+            element.disabled = true;
+            element.innerHTML = `<i class="fas fa-spinner fa-spin"></i>`;
+            logToTerminal(`[REQUEST] Initiating automated supply sequence for Product: ${productId}`);
+            
+            try {
+                const response = await fetch('/api/restock', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ product_id: productId })
+                });
+                const result = await response.json();
+                if(result.status === "success") {
+                    triggerSysNotification(`Supply channel execution complete. Inventory updated.`, "success");
+                    logToTerminal(`[SUCCESS] Restock executed +100 Units committed to CSV dataset.`);
+                    await initializeNeuroEngine();
+                } else throw new Error(result.message);
+            } catch (error) {
+                triggerSysNotification("Restock dispatch pipeline error.", "danger");
+                element.disabled = false;
+                element.innerText = "RE-ORDER";
+            }
+        }
+
+        // Multi-modal Upload Handler (Drag/Drop + Form Action)
+        const dropZone = document.getElementById('dropZone');
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropZone.addEventListener(eventName, (e) => { e.preventDefault(); dropZone.classList.add('dragover'); }, false);
+        });
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropZone.addEventListener(eventName, (e) => { e.preventDefault(); dropZone.classList.remove('dragover'); }, false);
+        });
+        dropZone.addEventListener('drop', (e) => {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+            if(files.length) { document.getElementById('fileInput').files = files; document.getElementById('fileInput').dispatchEvent(new Event('change')); }
+        });
+
+        document.getElementById('fileInput').onchange = async function() {
+            if(this.files.length === 0) return;
+            const file = this.files[0];
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            document.getElementById('uploadBoxText').innerText = file.name;
+            document.getElementById('trainingProgressTrackerBarFrame').classList.remove('d-none');
+            const progress = document.getElementById('liveSimulationProgressBarElement');
+            const statusLabel = document.getElementById('uploadStatusLabel');
+            
+            progress.style.width = '35%';
+            statusLabel.innerText = "Streaming matrix configurations to Flask server...";
+            logToTerminal(`[UPLOAD] Broadcasting target payload data: ${file.name}`);
+            
+            try {
+                const response = await fetch('/api/upload-dataset', { method: 'POST', body: formData });
+                const data = await response.json();
+                
+                if(data.status === "success" || data.status === "warning") {
+                    progress.style.width = '100%';
+                    statusLabel.innerText = "Optimization cycle finished.";
+                    logToTerminal(`[COMPILER] Random Forest parameters successfully updated.`);
+                    triggerSysNotification(data.message, data.status === "success" ? "success" : "warning");
+                    setTimeout(() => {
+                        document.getElementById('trainingProgressTrackerBarFrame').classList.add('d-none');
+                        initializeNeuroEngine();
+                    }, 1200);
+                } else throw new Error(data.message);
+            } catch (error) {
+                triggerSysNotification(error.message || "Pipeline synchronization encountered errors.", "danger");
+                logToTerminal(`[CRITICAL] Stream formatting mismatch exception.`);
+                progress.style.width = '0%';
+                statusLabel.innerText = "Pipeline processing interrupted.";
+            }
+        };
+
+        function renderCharts(charts) {
+            const ctx1 = document.getElementById('deepDemandForecastChart').getContext('2d');
+            if (chartInstances.forecast) chartInstances.forecast.destroy();
+            chartInstances.forecast = new Chart(ctx1, {
+                type: 'line',
+                data: { labels: charts.labels, datasets: [
+                    { label: 'Historical Volume', data: charts.actual, borderColor: '#4318ff', backgroundColor: 'rgba(67,24,255,0.05)', fill: true, tension: 0.4 },
+                    { label: 'AI Prediction Target', data: charts.predicted, borderColor: '#00f2fe', borderDash: [5, 5], tension: 0.4 }
+                ]},
+                options: { responsive: true, plugins: { legend: { position: 'top' } }, scales: { x: { grid: { display: false } } } }
+            });
+
+            const ctx2 = document.getElementById('stockDistributionMatrixPie').getContext('2d');
+            if (chartInstances.matrix) chartInstances.matrix.destroy();
+            chartInstances.matrix = new Chart(ctx2, {
+                type: 'doughnut',
+                data: { labels: ['Optimal Inventory', 'Warning State', 'Action Mandatory'], datasets: [{ data: charts.pie, backgroundColor: ['#05cd99', '#ffce20', '#ee5d50'], borderWidth: 0 }] },
+                options: { responsive: true, cutout: '75%', plugins: { legend: { position: 'bottom' } } }
+            });
+        }
+
+        function switchSystemTab(tabId) {
+            ['dashboard', 'inventory', 'ai-engine', 'logs'].forEach(id => {
+                const targetView = document.getElementById(id + '-view');
+                const targetNav = document.getElementById('nav-' + (id==='ai-engine'?'ai':id==='dashboard'?'dash':id));
+                if(targetView) targetView.classList.add('d-none');
+                if(targetNav) targetNav.classList.remove('active');
+            });
+            
+            const activeView = document.getElementById(tabId + '-view');
+            const activeNav = document.getElementById('nav-' + (tabId==='ai-engine'?'ai':tabId==='dashboard'?'dash':tabId));
+            if(activeView) activeView.classList.remove('d-none');
+            if(activeNav) activeNav.classList.add('active');
+            
+            logToTerminal(`[UI] Interface perspective changed to: ${tabId.toUpperCase()}`);
+        }
+
+        function toggleEngineTheme() {
+            document.body.classList.toggle('dark-theme');
+            const icon = document.getElementById('themeCtrlIcon');
+            const isDark = document.body.classList.contains('dark-theme');
+            icon.className = isDark ? 'fas fa-sun fs-4' : 'fas fa-moon fs-4 text-muted';
+            icon.style.color = isDark ? '#ffce20' : '';
+            logToTerminal(`[SYSTEM] Client configuration shifted to ${isDark ? 'Dark Theme' : 'Light Theme'}.`);
+        }
+    </script>
+</body>
+</html>
