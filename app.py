@@ -8,9 +8,9 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score
 
-# ==========================================
+
 # 1. Server Configuration & Logging
-# ==========================================
+
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - [NEURO_ENGINE] - %(levelname)s - %(message)s'
@@ -19,12 +19,11 @@ logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
 UPLOAD_FOLDER = os.getcwd()
-DATA_FILE = 'your_retail_data.csv'
+DATA_FILE = 'retail_dataset.csv'
 ALLOWED_EXTENSIONS = {'csv'}
 
-# ==========================================
+
 # 2. Core Engine Class
-# ==========================================
 class NeuroCommerceEngine:
     """Encapsulates the ML pipeline and Data State to avoid global variables."""
     
@@ -104,16 +103,14 @@ class NeuroCommerceEngine:
 # Instantiate the global engine instance
 engine = NeuroCommerceEngine(os.path.join(UPLOAD_FOLDER, DATA_FILE))
 
-# ==========================================
+
 # 3. Helper Functions
-# ==========================================
 def allowed_file(filename: str) -> bool:
     """Check if the uploaded file has a valid extension."""
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-# ==========================================
+
 # 4. API Routing
-# ==========================================
 @app.route('/')
 def home():
     """Render the primary single-page application interface."""
