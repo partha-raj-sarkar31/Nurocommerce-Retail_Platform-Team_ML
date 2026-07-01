@@ -42,7 +42,9 @@ The core intelligence engine and the primary dashboard interface are functional.
 
 **Supervisor**: Barisha Chowdhury, Lecturer, Dept. of CSE.
 
-## ⚙️ How to Run Locally
+## ⚙️ How to Run 
+###Globally : https://nurocommerce-retail-platform-team-ml-1.onrender.com/#
+###Locally
 
 1. **Clone the repository**: `git clone [YOUR_REPO_URL]`
 2. **Install dependencies**: `pip install flask pandas scikit-learn`
