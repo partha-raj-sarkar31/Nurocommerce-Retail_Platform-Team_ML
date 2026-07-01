@@ -1,0 +1,541 @@
+Date,Product_ID,Product_Name,Price,Month,Sales,Stock_Level
+2025-01-01,PRD-001,Wireless Headphones,50,1,49,86
+2025-01-01,PRD-002,Smart Watch X,120,1,27,215
+2025-01-01,PRD-003,Bluetooth Speaker,35,1,17,18
+2025-01-02,PRD-001,Wireless Headphones,50,1,57,141
+2025-01-02,PRD-002,Smart Watch X,120,1,31,97
+2025-01-02,PRD-003,Bluetooth Speaker,35,1,18,183
+2025-01-03,PRD-001,Wireless Headphones,50,1,70,253
+2025-01-03,PRD-002,Smart Watch X,120,1,54,259
+2025-01-03,PRD-003,Bluetooth Speaker,35,1,62,15
+2025-01-04,PRD-001,Wireless Headphones,50,1,61,57
+2025-01-04,PRD-002,Smart Watch X,120,1,46,156
+2025-01-04,PRD-003,Bluetooth Speaker,35,1,52,25
+2025-01-05,PRD-001,Wireless Headphones,50,1,19,51
+2025-01-05,PRD-002,Smart Watch X,120,1,33,34
+2025-01-05,PRD-003,Bluetooth Speaker,35,1,48,135
+2025-01-06,PRD-001,Wireless Headphones,50,1,31,248
+2025-01-06,PRD-002,Smart Watch X,120,1,23,242
+2025-01-06,PRD-003,Bluetooth Speaker,35,1,51,202
+2025-01-07,PRD-001,Wireless Headphones,50,1,33,62
+2025-01-07,PRD-002,Smart Watch X,120,1,53,150
+2025-01-07,PRD-003,Bluetooth Speaker,35,1,21,186
+2025-01-08,PRD-001,Wireless Headphones,50,1,40,135
+2025-01-08,PRD-002,Smart Watch X,120,1,48,231
+2025-01-08,PRD-003,Bluetooth Speaker,35,1,25,28
+2025-01-09,PRD-001,Wireless Headphones,50,1,51,194
+2025-01-09,PRD-002,Smart Watch X,120,1,39,151
+2025-01-09,PRD-003,Bluetooth Speaker,35,1,56,135
+2025-01-10,PRD-001,Wireless Headphones,50,1,39,193
+2025-01-10,PRD-002,Smart Watch X,120,1,30,43
+2025-01-10,PRD-003,Bluetooth Speaker,35,1,64,252
+2025-01-11,PRD-001,Wireless Headphones,50,1,67,120
+2025-01-11,PRD-002,Smart Watch X,120,1,51,189
+2025-01-11,PRD-003,Bluetooth Speaker,35,1,71,116
+2025-01-12,PRD-001,Wireless Headphones,50,1,23,257
+2025-01-12,PRD-002,Smart Watch X,120,1,41,163
+2025-01-12,PRD-003,Bluetooth Speaker,35,1,50,231
+2025-01-13,PRD-001,Wireless Headphones,50,1,26,74
+2025-01-13,PRD-002,Smart Watch X,120,1,38,196
+2025-01-13,PRD-003,Bluetooth Speaker,35,1,36,29
+2025-01-14,PRD-001,Wireless Headphones,50,1,31,35
+2025-01-14,PRD-002,Smart Watch X,120,1,50,227
+2025-01-14,PRD-003,Bluetooth Speaker,35,1,22,242
+2025-01-15,PRD-001,Wireless Headphones,50,1,26,109
+2025-01-15,PRD-002,Smart Watch X,120,1,50,225
+2025-01-15,PRD-003,Bluetooth Speaker,35,1,26,271
+2025-01-16,PRD-001,Wireless Headphones,50,1,36,25
+2025-01-16,PRD-002,Smart Watch X,120,1,38,14
+2025-01-16,PRD-003,Bluetooth Speaker,35,1,58,246
+2025-01-17,PRD-001,Wireless Headphones,50,1,75,193
+2025-01-17,PRD-002,Smart Watch X,120,1,50,113
+2025-01-17,PRD-003,Bluetooth Speaker,35,1,40,172
+2025-01-18,PRD-001,Wireless Headphones,50,1,67,51
+2025-01-18,PRD-002,Smart Watch X,120,1,32,142
+2025-01-18,PRD-003,Bluetooth Speaker,35,1,64,219
+2025-01-19,PRD-001,Wireless Headphones,50,1,18,93
+2025-01-19,PRD-002,Smart Watch X,120,1,53,239
+2025-01-19,PRD-003,Bluetooth Speaker,35,1,17,175
+2025-01-20,PRD-001,Wireless Headphones,50,1,26,211
+2025-01-20,PRD-002,Smart Watch X,120,1,40,132
+2025-01-20,PRD-003,Bluetooth Speaker,35,1,47,137
+2025-01-21,PRD-001,Wireless Headphones,50,1,27,29
+2025-01-21,PRD-002,Smart Watch X,120,1,41,233
+2025-01-21,PRD-003,Bluetooth Speaker,35,1,23,69
+2025-01-22,PRD-001,Wireless Headphones,50,1,42,22
+2025-01-22,PRD-002,Smart Watch X,120,1,52,156
+2025-01-22,PRD-003,Bluetooth Speaker,35,1,16,226
+2025-01-23,PRD-001,Wireless Headphones,50,1,58,138
+2025-01-23,PRD-002,Smart Watch X,120,1,44,110
+2025-01-23,PRD-003,Bluetooth Speaker,35,1,55,237
+2025-01-24,PRD-001,Wireless Headphones,50,1,47,16
+2025-01-24,PRD-002,Smart Watch X,120,1,62,77
+2025-01-24,PRD-003,Bluetooth Speaker,35,1,47,148
+2025-01-25,PRD-001,Wireless Headphones,50,1,66,66
+2025-01-25,PRD-002,Smart Watch X,120,1,44,106
+2025-01-25,PRD-003,Bluetooth Speaker,35,1,59,293
+2025-01-26,PRD-001,Wireless Headphones,50,1,40,50
+2025-01-26,PRD-002,Smart Watch X,120,1,17,153
+2025-01-26,PRD-003,Bluetooth Speaker,35,1,53,258
+2025-01-27,PRD-001,Wireless Headphones,50,1,53,33
+2025-01-27,PRD-002,Smart Watch X,120,1,42,40
+2025-01-27,PRD-003,Bluetooth Speaker,35,1,22,32
+2025-01-28,PRD-001,Wireless Headphones,50,1,31,29
+2025-01-28,PRD-002,Smart Watch X,120,1,18,217
+2025-01-28,PRD-003,Bluetooth Speaker,35,1,25,55
+2025-01-29,PRD-001,Wireless Headphones,50,1,54,69
+2025-01-29,PRD-002,Smart Watch X,120,1,21,255
+2025-01-29,PRD-003,Bluetooth Speaker,35,1,24,137
+2025-01-30,PRD-001,Wireless Headphones,50,1,44,36
+2025-01-30,PRD-002,Smart Watch X,120,1,32,232
+2025-01-30,PRD-003,Bluetooth Speaker,35,1,29,133
+2025-01-31,PRD-001,Wireless Headphones,50,1,40,109
+2025-01-31,PRD-002,Smart Watch X,120,1,74,133
+2025-01-31,PRD-003,Bluetooth Speaker,35,1,78,58
+2025-02-01,PRD-001,Wireless Headphones,50,2,35,188
+2025-02-01,PRD-002,Smart Watch X,120,2,37,238
+2025-02-01,PRD-003,Bluetooth Speaker,35,2,35,49
+2025-02-02,PRD-001,Wireless Headphones,50,2,32,270
+2025-02-02,PRD-002,Smart Watch X,120,2,25,124
+2025-02-02,PRD-003,Bluetooth Speaker,35,2,43,297
+2025-02-03,PRD-001,Wireless Headphones,50,2,56,143
+2025-02-03,PRD-002,Smart Watch X,120,2,43,102
+2025-02-03,PRD-003,Bluetooth Speaker,35,2,18,26
+2025-02-04,PRD-001,Wireless Headphones,50,2,29,203
+2025-02-04,PRD-002,Smart Watch X,120,2,53,230
+2025-02-04,PRD-003,Bluetooth Speaker,35,2,34,189
+2025-02-05,PRD-001,Wireless Headphones,50,2,57,64
+2025-02-05,PRD-002,Smart Watch X,120,2,30,183
+2025-02-05,PRD-003,Bluetooth Speaker,35,2,44,52
+2025-02-06,PRD-001,Wireless Headphones,50,2,58,248
+2025-02-06,PRD-002,Smart Watch X,120,2,19,87
+2025-02-06,PRD-003,Bluetooth Speaker,35,2,33,102
+2025-02-07,PRD-001,Wireless Headphones,50,2,65,132
+2025-02-07,PRD-002,Smart Watch X,120,2,63,45
+2025-02-07,PRD-003,Bluetooth Speaker,35,2,60,160
+2025-02-08,PRD-001,Wireless Headphones,50,2,52,276
+2025-02-08,PRD-002,Smart Watch X,120,2,73,178
+2025-02-08,PRD-003,Bluetooth Speaker,35,2,44,247
+2025-02-09,PRD-001,Wireless Headphones,50,2,42,28
+2025-02-09,PRD-002,Smart Watch X,120,2,19,245
+2025-02-09,PRD-003,Bluetooth Speaker,35,2,51,152
+2025-02-10,PRD-001,Wireless Headphones,50,2,36,288
+2025-02-10,PRD-002,Smart Watch X,120,2,57,61
+2025-02-10,PRD-003,Bluetooth Speaker,35,2,56,235
+2025-02-11,PRD-001,Wireless Headphones,50,2,56,187
+2025-02-11,PRD-002,Smart Watch X,120,2,58,202
+2025-02-11,PRD-003,Bluetooth Speaker,35,2,22,272
+2025-02-12,PRD-001,Wireless Headphones,50,2,17,90
+2025-02-12,PRD-002,Smart Watch X,120,2,48,135
+2025-02-12,PRD-003,Bluetooth Speaker,35,2,31,239
+2025-02-13,PRD-001,Wireless Headphones,50,2,25,228
+2025-02-13,PRD-002,Smart Watch X,120,2,31,78
+2025-02-13,PRD-003,Bluetooth Speaker,35,2,31,261
+2025-02-14,PRD-001,Wireless Headphones,50,2,70,97
+2025-02-14,PRD-002,Smart Watch X,120,2,71,134
+2025-02-14,PRD-003,Bluetooth Speaker,35,2,51,276
+2025-02-15,PRD-001,Wireless Headphones,50,2,40,109
+2025-02-15,PRD-002,Smart Watch X,120,2,60,89
+2025-02-15,PRD-003,Bluetooth Speaker,35,2,70,108
+2025-02-16,PRD-001,Wireless Headphones,50,2,33,115
+2025-02-16,PRD-002,Smart Watch X,120,2,42,119
+2025-02-16,PRD-003,Bluetooth Speaker,35,2,58,144
+2025-02-17,PRD-001,Wireless Headphones,50,2,29,50
+2025-02-17,PRD-002,Smart Watch X,120,2,42,278
+2025-02-17,PRD-003,Bluetooth Speaker,35,2,16,47
+2025-02-18,PRD-001,Wireless Headphones,50,2,46,84
+2025-02-18,PRD-002,Smart Watch X,120,2,30,30
+2025-02-18,PRD-003,Bluetooth Speaker,35,2,48,77
+2025-02-19,PRD-001,Wireless Headphones,50,2,31,121
+2025-02-19,PRD-002,Smart Watch X,120,2,38,268
+2025-02-19,PRD-003,Bluetooth Speaker,35,2,33,175
+2025-02-20,PRD-001,Wireless Headphones,50,2,24,260
+2025-02-20,PRD-002,Smart Watch X,120,2,56,201
+2025-02-20,PRD-003,Bluetooth Speaker,35,2,34,91
+2025-02-21,PRD-001,Wireless Headphones,50,2,35,47
+2025-02-21,PRD-002,Smart Watch X,120,2,42,59
+2025-02-21,PRD-003,Bluetooth Speaker,35,2,40,267
+2025-02-22,PRD-001,Wireless Headphones,50,2,68,281
+2025-02-22,PRD-002,Smart Watch X,120,2,42,38
+2025-02-22,PRD-003,Bluetooth Speaker,35,2,51,297
+2025-02-23,PRD-001,Wireless Headphones,50,2,48,80
+2025-02-23,PRD-002,Smart Watch X,120,2,22,170
+2025-02-23,PRD-003,Bluetooth Speaker,35,2,59,252
+2025-02-24,PRD-001,Wireless Headphones,50,2,59,264
+2025-02-24,PRD-002,Smart Watch X,120,2,54,243
+2025-02-24,PRD-003,Bluetooth Speaker,35,2,28,148
+2025-02-25,PRD-001,Wireless Headphones,50,2,58,280
+2025-02-25,PRD-002,Smart Watch X,120,2,49,130
+2025-02-25,PRD-003,Bluetooth Speaker,35,2,36,256
+2025-02-26,PRD-001,Wireless Headphones,50,2,17,105
+2025-02-26,PRD-002,Smart Watch X,120,2,57,166
+2025-02-26,PRD-003,Bluetooth Speaker,35,2,25,239
+2025-02-27,PRD-001,Wireless Headphones,50,2,40,90
+2025-02-27,PRD-002,Smart Watch X,120,2,57,255
+2025-02-27,PRD-003,Bluetooth Speaker,35,2,24,218
+2025-02-28,PRD-001,Wireless Headphones,50,2,43,114
+2025-02-28,PRD-002,Smart Watch X,120,2,32,264
+2025-02-28,PRD-003,Bluetooth Speaker,35,2,44,62
+2025-03-01,PRD-001,Wireless Headphones,50,3,66,170
+2025-03-01,PRD-002,Smart Watch X,120,3,58,281
+2025-03-01,PRD-003,Bluetooth Speaker,35,3,80,293
+2025-03-02,PRD-001,Wireless Headphones,50,3,19,159
+2025-03-02,PRD-002,Smart Watch X,120,3,48,173
+2025-03-02,PRD-003,Bluetooth Speaker,35,3,23,162
+2025-03-03,PRD-001,Wireless Headphones,50,3,40,178
+2025-03-03,PRD-002,Smart Watch X,120,3,17,30
+2025-03-03,PRD-003,Bluetooth Speaker,35,3,34,225
+2025-03-04,PRD-001,Wireless Headphones,50,3,49,145
+2025-03-04,PRD-002,Smart Watch X,120,3,42,41
+2025-03-04,PRD-003,Bluetooth Speaker,35,3,15,161
+2025-03-05,PRD-001,Wireless Headphones,50,3,36,285
+2025-03-05,PRD-002,Smart Watch X,120,3,58,37
+2025-03-05,PRD-003,Bluetooth Speaker,35,3,28,276
+2025-03-06,PRD-001,Wireless Headphones,50,3,33,267
+2025-03-06,PRD-002,Smart Watch X,120,3,25,182
+2025-03-06,PRD-003,Bluetooth Speaker,35,3,15,216
+2025-03-07,PRD-001,Wireless Headphones,50,3,56,118
+2025-03-07,PRD-002,Smart Watch X,120,3,60,170
+2025-03-07,PRD-003,Bluetooth Speaker,35,3,64,74
+2025-03-08,PRD-001,Wireless Headphones,50,3,60,134
+2025-03-08,PRD-002,Smart Watch X,120,3,58,293
+2025-03-08,PRD-003,Bluetooth Speaker,35,3,52,141
+2025-03-09,PRD-001,Wireless Headphones,50,3,16,98
+2025-03-09,PRD-002,Smart Watch X,120,3,36,64
+2025-03-09,PRD-003,Bluetooth Speaker,35,3,29,63
+2025-03-10,PRD-001,Wireless Headphones,50,3,18,210
+2025-03-10,PRD-002,Smart Watch X,120,3,56,236
+2025-03-10,PRD-003,Bluetooth Speaker,35,3,50,94
+2025-03-11,PRD-001,Wireless Headphones,50,3,18,176
+2025-03-11,PRD-002,Smart Watch X,120,3,32,183
+2025-03-11,PRD-003,Bluetooth Speaker,35,3,30,297
+2025-03-12,PRD-001,Wireless Headphones,50,3,17,149
+2025-03-12,PRD-002,Smart Watch X,120,3,19,127
+2025-03-12,PRD-003,Bluetooth Speaker,35,3,56,104
+2025-03-13,PRD-001,Wireless Headphones,50,3,53,250
+2025-03-13,PRD-002,Smart Watch X,120,3,37,114
+2025-03-13,PRD-003,Bluetooth Speaker,35,3,38,257
+2025-03-14,PRD-001,Wireless Headphones,50,3,58,97
+2025-03-14,PRD-002,Smart Watch X,120,3,55,14
+2025-03-14,PRD-003,Bluetooth Speaker,35,3,67,146
+2025-03-15,PRD-001,Wireless Headphones,50,3,66,237
+2025-03-15,PRD-002,Smart Watch X,120,3,74,289
+2025-03-15,PRD-003,Bluetooth Speaker,35,3,32,79
+2025-03-16,PRD-001,Wireless Headphones,50,3,52,130
+2025-03-16,PRD-002,Smart Watch X,120,3,48,226
+2025-03-16,PRD-003,Bluetooth Speaker,35,3,59,250
+2025-03-17,PRD-001,Wireless Headphones,50,3,58,230
+2025-03-17,PRD-002,Smart Watch X,120,3,38,141
+2025-03-17,PRD-003,Bluetooth Speaker,35,3,21,127
+2025-03-18,PRD-001,Wireless Headphones,50,3,51,218
+2025-03-18,PRD-002,Smart Watch X,120,3,58,111
+2025-03-18,PRD-003,Bluetooth Speaker,35,3,23,42
+2025-03-19,PRD-001,Wireless Headphones,50,3,17,23
+2025-03-19,PRD-002,Smart Watch X,120,3,22,93
+2025-03-19,PRD-003,Bluetooth Speaker,35,3,37,286
+2025-03-20,PRD-001,Wireless Headphones,50,3,49,43
+2025-03-20,PRD-002,Smart Watch X,120,3,37,50
+2025-03-20,PRD-003,Bluetooth Speaker,35,3,45,208
+2025-03-21,PRD-001,Wireless Headphones,50,3,34,105
+2025-03-21,PRD-002,Smart Watch X,120,3,78,101
+2025-03-21,PRD-003,Bluetooth Speaker,35,3,75,126
+2025-03-22,PRD-001,Wireless Headphones,50,3,42,172
+2025-03-22,PRD-002,Smart Watch X,120,3,31,64
+2025-03-22,PRD-003,Bluetooth Speaker,35,3,48,24
+2025-03-23,PRD-001,Wireless Headphones,50,3,23,121
+2025-03-23,PRD-002,Smart Watch X,120,3,50,96
+2025-03-23,PRD-003,Bluetooth Speaker,35,3,55,124
+2025-03-24,PRD-001,Wireless Headphones,50,3,17,227
+2025-03-24,PRD-002,Smart Watch X,120,3,47,57
+2025-03-24,PRD-003,Bluetooth Speaker,35,3,26,143
+2025-03-25,PRD-001,Wireless Headphones,50,3,51,105
+2025-03-25,PRD-002,Smart Watch X,120,3,43,202
+2025-03-25,PRD-003,Bluetooth Speaker,35,3,51,211
+2025-03-26,PRD-001,Wireless Headphones,50,3,54,35
+2025-03-26,PRD-002,Smart Watch X,120,3,18,41
+2025-03-26,PRD-003,Bluetooth Speaker,35,3,50,171
+2025-03-27,PRD-001,Wireless Headphones,50,3,31,21
+2025-03-27,PRD-002,Smart Watch X,120,3,42,61
+2025-03-27,PRD-003,Bluetooth Speaker,35,3,16,33
+2025-03-28,PRD-001,Wireless Headphones,50,3,51,196
+2025-03-28,PRD-002,Smart Watch X,120,3,52,238
+2025-03-28,PRD-003,Bluetooth Speaker,35,3,69,174
+2025-03-29,PRD-001,Wireless Headphones,50,3,71,35
+2025-03-29,PRD-002,Smart Watch X,120,3,47,277
+2025-03-29,PRD-003,Bluetooth Speaker,35,3,36,48
+2025-03-30,PRD-001,Wireless Headphones,50,3,29,239
+2025-03-30,PRD-002,Smart Watch X,120,3,58,72
+2025-03-30,PRD-003,Bluetooth Speaker,35,3,23,119
+2025-03-31,PRD-001,Wireless Headphones,50,3,50,253
+2025-03-31,PRD-002,Smart Watch X,120,3,24,10
+2025-03-31,PRD-003,Bluetooth Speaker,35,3,16,177
+2025-04-01,PRD-001,Wireless Headphones,50,4,59,235
+2025-04-01,PRD-002,Smart Watch X,120,4,27,294
+2025-04-01,PRD-003,Bluetooth Speaker,35,4,38,274
+2025-04-02,PRD-001,Wireless Headphones,50,4,55,77
+2025-04-02,PRD-002,Smart Watch X,120,4,27,202
+2025-04-02,PRD-003,Bluetooth Speaker,35,4,39,137
+2025-04-03,PRD-001,Wireless Headphones,50,4,19,100
+2025-04-03,PRD-002,Smart Watch X,120,4,25,214
+2025-04-03,PRD-003,Bluetooth Speaker,35,4,42,176
+2025-04-04,PRD-001,Wireless Headphones,50,4,54,46
+2025-04-04,PRD-002,Smart Watch X,120,4,61,127
+2025-04-04,PRD-003,Bluetooth Speaker,35,4,67,61
+2025-04-05,PRD-001,Wireless Headphones,50,4,38,52
+2025-04-05,PRD-002,Smart Watch X,120,4,50,24
+2025-04-05,PRD-003,Bluetooth Speaker,35,4,75,166
+2025-04-06,PRD-001,Wireless Headphones,50,4,32,182
+2025-04-06,PRD-002,Smart Watch X,120,4,48,288
+2025-04-06,PRD-003,Bluetooth Speaker,35,4,17,63
+2025-04-07,PRD-001,Wireless Headphones,50,4,44,85
+2025-04-07,PRD-002,Smart Watch X,120,4,44,292
+2025-04-07,PRD-003,Bluetooth Speaker,35,4,18,198
+2025-04-08,PRD-001,Wireless Headphones,50,4,36,171
+2025-04-08,PRD-002,Smart Watch X,120,4,38,179
+2025-04-08,PRD-003,Bluetooth Speaker,35,4,58,280
+2025-04-09,PRD-001,Wireless Headphones,50,4,46,80
+2025-04-09,PRD-002,Smart Watch X,120,4,49,134
+2025-04-09,PRD-003,Bluetooth Speaker,35,4,28,227
+2025-04-10,PRD-001,Wireless Headphones,50,4,32,171
+2025-04-10,PRD-002,Smart Watch X,120,4,27,91
+2025-04-10,PRD-003,Bluetooth Speaker,35,4,22,93
+2025-04-11,PRD-001,Wireless Headphones,50,4,38,251
+2025-04-11,PRD-002,Smart Watch X,120,4,52,234
+2025-04-11,PRD-003,Bluetooth Speaker,35,4,49,158
+2025-04-12,PRD-001,Wireless Headphones,50,4,53,291
+2025-04-12,PRD-002,Smart Watch X,120,4,47,148
+2025-04-12,PRD-003,Bluetooth Speaker,35,4,44,126
+2025-04-13,PRD-001,Wireless Headphones,50,4,24,113
+2025-04-13,PRD-002,Smart Watch X,120,4,27,161
+2025-04-13,PRD-003,Bluetooth Speaker,35,4,15,35
+2025-04-14,PRD-001,Wireless Headphones,50,4,25,212
+2025-04-14,PRD-002,Smart Watch X,120,4,25,258
+2025-04-14,PRD-003,Bluetooth Speaker,35,4,19,183
+2025-04-15,PRD-001,Wireless Headphones,50,4,41,256
+2025-04-15,PRD-002,Smart Watch X,120,4,47,94
+2025-04-15,PRD-003,Bluetooth Speaker,35,4,48,14
+2025-04-16,PRD-001,Wireless Headphones,50,4,24,123
+2025-04-16,PRD-002,Smart Watch X,120,4,36,175
+2025-04-16,PRD-003,Bluetooth Speaker,35,4,29,77
+2025-04-17,PRD-001,Wireless Headphones,50,4,56,258
+2025-04-17,PRD-002,Smart Watch X,120,4,19,284
+2025-04-17,PRD-003,Bluetooth Speaker,35,4,33,18
+2025-04-18,PRD-001,Wireless Headphones,50,4,39,96
+2025-04-18,PRD-002,Smart Watch X,120,4,39,213
+2025-04-18,PRD-003,Bluetooth Speaker,35,4,33,276
+2025-04-19,PRD-001,Wireless Headphones,50,4,41,77
+2025-04-19,PRD-002,Smart Watch X,120,4,51,226
+2025-04-19,PRD-003,Bluetooth Speaker,35,4,28,297
+2025-04-20,PRD-001,Wireless Headphones,50,4,39,245
+2025-04-20,PRD-002,Smart Watch X,120,4,35,250
+2025-04-20,PRD-003,Bluetooth Speaker,35,4,43,139
+2025-04-21,PRD-001,Wireless Headphones,50,4,44,28
+2025-04-21,PRD-002,Smart Watch X,120,4,20,286
+2025-04-21,PRD-003,Bluetooth Speaker,35,4,41,298
+2025-04-22,PRD-001,Wireless Headphones,50,4,59,46
+2025-04-22,PRD-002,Smart Watch X,120,4,27,125
+2025-04-22,PRD-003,Bluetooth Speaker,35,4,47,231
+2025-04-23,PRD-001,Wireless Headphones,50,4,55,124
+2025-04-23,PRD-002,Smart Watch X,120,4,25,80
+2025-04-23,PRD-003,Bluetooth Speaker,35,4,30,269
+2025-04-24,PRD-001,Wireless Headphones,50,4,59,107
+2025-04-24,PRD-002,Smart Watch X,120,4,22,102
+2025-04-24,PRD-003,Bluetooth Speaker,35,4,45,141
+2025-04-25,PRD-001,Wireless Headphones,50,4,72,79
+2025-04-25,PRD-002,Smart Watch X,120,4,56,207
+2025-04-25,PRD-003,Bluetooth Speaker,35,4,79,123
+2025-04-26,PRD-001,Wireless Headphones,50,4,51,120
+2025-04-26,PRD-002,Smart Watch X,120,4,62,193
+2025-04-26,PRD-003,Bluetooth Speaker,35,4,27,169
+2025-04-27,PRD-001,Wireless Headphones,50,4,16,107
+2025-04-27,PRD-002,Smart Watch X,120,4,41,222
+2025-04-27,PRD-003,Bluetooth Speaker,35,4,45,209
+2025-04-28,PRD-001,Wireless Headphones,50,4,16,15
+2025-04-28,PRD-002,Smart Watch X,120,4,40,38
+2025-04-28,PRD-003,Bluetooth Speaker,35,4,22,279
+2025-04-29,PRD-001,Wireless Headphones,50,4,18,291
+2025-04-29,PRD-002,Smart Watch X,120,4,53,29
+2025-04-29,PRD-003,Bluetooth Speaker,35,4,52,198
+2025-04-30,PRD-001,Wireless Headphones,50,4,26,61
+2025-04-30,PRD-002,Smart Watch X,120,4,58,153
+2025-04-30,PRD-003,Bluetooth Speaker,35,4,29,106
+2025-05-01,PRD-001,Wireless Headphones,50,5,31,279
+2025-05-01,PRD-002,Smart Watch X,120,5,42,86
+2025-05-01,PRD-003,Bluetooth Speaker,35,5,21,61
+2025-05-02,PRD-001,Wireless Headphones,50,5,48,162
+2025-05-02,PRD-002,Smart Watch X,120,5,38,65
+2025-05-02,PRD-003,Bluetooth Speaker,35,5,47,120
+2025-05-03,PRD-001,Wireless Headphones,50,5,37,105
+2025-05-03,PRD-002,Smart Watch X,120,5,78,215
+2025-05-03,PRD-003,Bluetooth Speaker,35,5,51,35
+2025-05-04,PRD-001,Wireless Headphones,50,5,51,297
+2025-05-04,PRD-002,Smart Watch X,120,5,55,276
+2025-05-04,PRD-003,Bluetooth Speaker,35,5,33,135
+2025-05-05,PRD-001,Wireless Headphones,50,5,38,211
+2025-05-05,PRD-002,Smart Watch X,120,5,38,291
+2025-05-05,PRD-003,Bluetooth Speaker,35,5,20,71
+2025-05-06,PRD-001,Wireless Headphones,50,5,24,220
+2025-05-06,PRD-002,Smart Watch X,120,5,41,246
+2025-05-06,PRD-003,Bluetooth Speaker,35,5,41,175
+2025-05-07,PRD-001,Wireless Headphones,50,5,38,134
+2025-05-07,PRD-002,Smart Watch X,120,5,34,245
+2025-05-07,PRD-003,Bluetooth Speaker,35,5,42,20
+2025-05-08,PRD-001,Wireless Headphones,50,5,24,293
+2025-05-08,PRD-002,Smart Watch X,120,5,34,19
+2025-05-08,PRD-003,Bluetooth Speaker,35,5,46,292
+2025-05-09,PRD-001,Wireless Headphones,50,5,26,275
+2025-05-09,PRD-002,Smart Watch X,120,5,59,92
+2025-05-09,PRD-003,Bluetooth Speaker,35,5,54,284
+2025-05-10,PRD-001,Wireless Headphones,50,5,50,74
+2025-05-10,PRD-002,Smart Watch X,120,5,69,24
+2025-05-10,PRD-003,Bluetooth Speaker,35,5,59,66
+2025-05-11,PRD-001,Wireless Headphones,50,5,16,200
+2025-05-11,PRD-002,Smart Watch X,120,5,21,133
+2025-05-11,PRD-003,Bluetooth Speaker,35,5,38,291
+2025-05-12,PRD-001,Wireless Headphones,50,5,54,78
+2025-05-12,PRD-002,Smart Watch X,120,5,33,257
+2025-05-12,PRD-003,Bluetooth Speaker,35,5,58,116
+2025-05-13,PRD-001,Wireless Headphones,50,5,20,68
+2025-05-13,PRD-002,Smart Watch X,120,5,18,292
+2025-05-13,PRD-003,Bluetooth Speaker,35,5,33,174
+2025-05-14,PRD-001,Wireless Headphones,50,5,39,110
+2025-05-14,PRD-002,Smart Watch X,120,5,33,136
+2025-05-14,PRD-003,Bluetooth Speaker,35,5,34,32
+2025-05-15,PRD-001,Wireless Headphones,50,5,55,40
+2025-05-15,PRD-002,Smart Watch X,120,5,15,228
+2025-05-15,PRD-003,Bluetooth Speaker,35,5,16,202
+2025-05-16,PRD-001,Wireless Headphones,50,5,55,189
+2025-05-16,PRD-002,Smart Watch X,120,5,47,261
+2025-05-16,PRD-003,Bluetooth Speaker,35,5,31,46
+2025-05-17,PRD-001,Wireless Headphones,50,5,75,158
+2025-05-17,PRD-002,Smart Watch X,120,5,37,246
+2025-05-17,PRD-003,Bluetooth Speaker,35,5,45,95
+2025-05-18,PRD-001,Wireless Headphones,50,5,16,20
+2025-05-18,PRD-002,Smart Watch X,120,5,20,143
+2025-05-18,PRD-003,Bluetooth Speaker,35,5,50,160
+2025-05-19,PRD-001,Wireless Headphones,50,5,21,166
+2025-05-19,PRD-002,Smart Watch X,120,5,22,79
+2025-05-19,PRD-003,Bluetooth Speaker,35,5,36,292
+2025-05-20,PRD-001,Wireless Headphones,50,5,25,59
+2025-05-20,PRD-002,Smart Watch X,120,5,20,19
+2025-05-20,PRD-003,Bluetooth Speaker,35,5,48,92
+2025-05-21,PRD-001,Wireless Headphones,50,5,23,233
+2025-05-21,PRD-002,Smart Watch X,120,5,59,292
+2025-05-21,PRD-003,Bluetooth Speaker,35,5,33,183
+2025-05-22,PRD-001,Wireless Headphones,50,5,38,30
+2025-05-22,PRD-002,Smart Watch X,120,5,54,292
+2025-05-22,PRD-003,Bluetooth Speaker,35,5,34,92
+2025-05-23,PRD-001,Wireless Headphones,50,5,65,80
+2025-05-23,PRD-002,Smart Watch X,120,5,41,231
+2025-05-23,PRD-003,Bluetooth Speaker,35,5,64,42
+2025-05-24,PRD-001,Wireless Headphones,50,5,35,67
+2025-05-24,PRD-002,Smart Watch X,120,5,51,14
+2025-05-24,PRD-003,Bluetooth Speaker,35,5,40,284
+2025-05-25,PRD-001,Wireless Headphones,50,5,58,279
+2025-05-25,PRD-002,Smart Watch X,120,5,17,102
+2025-05-25,PRD-003,Bluetooth Speaker,35,5,20,127
+2025-05-26,PRD-001,Wireless Headphones,50,5,44,222
+2025-05-26,PRD-002,Smart Watch X,120,5,52,116
+2025-05-26,PRD-003,Bluetooth Speaker,35,5,50,270
+2025-05-27,PRD-001,Wireless Headphones,50,5,48,247
+2025-05-27,PRD-002,Smart Watch X,120,5,29,146
+2025-05-27,PRD-003,Bluetooth Speaker,35,5,39,253
+2025-05-28,PRD-001,Wireless Headphones,50,5,54,90
+2025-05-28,PRD-002,Smart Watch X,120,5,24,18
+2025-05-28,PRD-003,Bluetooth Speaker,35,5,48,40
+2025-05-29,PRD-001,Wireless Headphones,50,5,22,59
+2025-05-29,PRD-002,Smart Watch X,120,5,51,70
+2025-05-29,PRD-003,Bluetooth Speaker,35,5,46,265
+2025-05-30,PRD-001,Wireless Headphones,50,5,74,184
+2025-05-30,PRD-002,Smart Watch X,120,5,62,99
+2025-05-30,PRD-003,Bluetooth Speaker,35,5,55,170
+2025-05-31,PRD-001,Wireless Headphones,50,5,57,192
+2025-05-31,PRD-002,Smart Watch X,120,5,30,171
+2025-05-31,PRD-003,Bluetooth Speaker,35,5,57,157
+2025-06-01,PRD-001,Wireless Headphones,50,6,24,91
+2025-06-01,PRD-002,Smart Watch X,120,6,33,112
+2025-06-01,PRD-003,Bluetooth Speaker,35,6,26,77
+2025-06-02,PRD-001,Wireless Headphones,50,6,33,205
+2025-06-02,PRD-002,Smart Watch X,120,6,33,147
+2025-06-02,PRD-003,Bluetooth Speaker,35,6,59,154
+2025-06-03,PRD-001,Wireless Headphones,50,6,51,217
+2025-06-03,PRD-002,Smart Watch X,120,6,18,196
+2025-06-03,PRD-003,Bluetooth Speaker,35,6,33,54
+2025-06-04,PRD-001,Wireless Headphones,50,6,54,174
+2025-06-04,PRD-002,Smart Watch X,120,6,27,67
+2025-06-04,PRD-003,Bluetooth Speaker,35,6,55,101
+2025-06-05,PRD-001,Wireless Headphones,50,6,20,65
+2025-06-05,PRD-002,Smart Watch X,120,6,48,135
+2025-06-05,PRD-003,Bluetooth Speaker,35,6,49,181
+2025-06-06,PRD-001,Wireless Headphones,50,6,68,29
+2025-06-06,PRD-002,Smart Watch X,120,6,64,296
+2025-06-06,PRD-003,Bluetooth Speaker,35,6,58,283
+2025-06-07,PRD-001,Wireless Headphones,50,6,50,183
+2025-06-07,PRD-002,Smart Watch X,120,6,45,127
+2025-06-07,PRD-003,Bluetooth Speaker,35,6,48,140
+2025-06-08,PRD-001,Wireless Headphones,50,6,50,182
+2025-06-08,PRD-002,Smart Watch X,120,6,26,47
+2025-06-08,PRD-003,Bluetooth Speaker,35,6,47,213
+2025-06-09,PRD-001,Wireless Headphones,50,6,52,137
+2025-06-09,PRD-002,Smart Watch X,120,6,45,173
+2025-06-09,PRD-003,Bluetooth Speaker,35,6,53,260
+2025-06-10,PRD-001,Wireless Headphones,50,6,41,59
+2025-06-10,PRD-002,Smart Watch X,120,6,42,26
+2025-06-10,PRD-003,Bluetooth Speaker,35,6,31,14
+2025-06-11,PRD-001,Wireless Headphones,50,6,26,134
+2025-06-11,PRD-002,Smart Watch X,120,6,30,112
+2025-06-11,PRD-003,Bluetooth Speaker,35,6,24,190
+2025-06-12,PRD-001,Wireless Headphones,50,6,16,91
+2025-06-12,PRD-002,Smart Watch X,120,6,19,238
+2025-06-12,PRD-003,Bluetooth Speaker,35,6,58,130
+2025-06-13,PRD-001,Wireless Headphones,50,6,41,98
+2025-06-13,PRD-002,Smart Watch X,120,6,50,78
+2025-06-13,PRD-003,Bluetooth Speaker,35,6,66,261
+2025-06-14,PRD-001,Wireless Headphones,50,6,38,17
+2025-06-14,PRD-002,Smart Watch X,120,6,67,188
+2025-06-14,PRD-003,Bluetooth Speaker,35,6,44,114
+2025-06-15,PRD-001,Wireless Headphones,50,6,33,120
+2025-06-15,PRD-002,Smart Watch X,120,6,24,285
+2025-06-15,PRD-003,Bluetooth Speaker,35,6,17,273
+2025-06-16,PRD-001,Wireless Headphones,50,6,36,36
+2025-06-16,PRD-002,Smart Watch X,120,6,16,254
+2025-06-16,PRD-003,Bluetooth Speaker,35,6,38,226
+2025-06-17,PRD-001,Wireless Headphones,50,6,34,143
+2025-06-17,PRD-002,Smart Watch X,120,6,50,101
+2025-06-17,PRD-003,Bluetooth Speaker,35,6,34,242
+2025-06-18,PRD-001,Wireless Headphones,50,6,50,165
+2025-06-18,PRD-002,Smart Watch X,120,6,59,241
+2025-06-18,PRD-003,Bluetooth Speaker,35,6,51,298
+2025-06-19,PRD-001,Wireless Headphones,50,6,17,222
+2025-06-19,PRD-002,Smart Watch X,120,6,49,191
+2025-06-19,PRD-003,Bluetooth Speaker,35,6,15,197
+2025-06-20,PRD-001,Wireless Headphones,50,6,46,204
+2025-06-20,PRD-002,Smart Watch X,120,6,73,11
+2025-06-20,PRD-003,Bluetooth Speaker,35,6,53,237
+2025-06-21,PRD-001,Wireless Headphones,50,6,36,244
+2025-06-21,PRD-002,Smart Watch X,120,6,50,284
+2025-06-21,PRD-003,Bluetooth Speaker,35,6,64,261
+2025-06-22,PRD-001,Wireless Headphones,50,6,24,40
+2025-06-22,PRD-002,Smart Watch X,120,6,51,95
+2025-06-22,PRD-003,Bluetooth Speaker,35,6,18,246
+2025-06-23,PRD-001,Wireless Headphones,50,6,49,288
+2025-06-23,PRD-002,Smart Watch X,120,6,48,104
+2025-06-23,PRD-003,Bluetooth Speaker,35,6,42,120
+2025-06-24,PRD-001,Wireless Headphones,50,6,51,285
+2025-06-24,PRD-002,Smart Watch X,120,6,59,228
+2025-06-24,PRD-003,Bluetooth Speaker,35,6,29,255
+2025-06-25,PRD-001,Wireless Headphones,50,6,51,227
+2025-06-25,PRD-002,Smart Watch X,120,6,55,89
+2025-06-25,PRD-003,Bluetooth Speaker,35,6,50,253
+2025-06-26,PRD-001,Wireless Headphones,50,6,26,15
+2025-06-26,PRD-002,Smart Watch X,120,6,21,14
+2025-06-26,PRD-003,Bluetooth Speaker,35,6,53,112
+2025-06-27,PRD-001,Wireless Headphones,50,6,58,65
+2025-06-27,PRD-002,Smart Watch X,120,6,31,191
+2025-06-27,PRD-003,Bluetooth Speaker,35,6,79,128
+2025-06-28,PRD-001,Wireless Headphones,50,6,48,234
+2025-06-28,PRD-002,Smart Watch X,120,6,55,167
+2025-06-28,PRD-003,Bluetooth Speaker,35,6,62,90
+2025-06-29,PRD-001,Wireless Headphones,50,6,21,65
+2025-06-29,PRD-002,Smart Watch X,120,6,24,196
+2025-06-29,PRD-003,Bluetooth Speaker,35,6,29,190
