@@ -1,4 +1,4 @@
-# NeuroCommerce: AI-Driven Retail Automation
+# NeuroCommerce: AI-Driven Retail Automation and Inventory Intelligence Platform
 
 NeuroCommerce is an intelligent, AI-powered inventory platform designed to automate demand forecasting and stock replenishment for small retail businesses. It utilizes a Flask-based engine and a Random Forest Regressor to provide real-time insights into inventory health. This system aims to optimize retail efficiency through modern machine learning techniques and data-driven analysis.
 
@@ -19,7 +19,7 @@ This project addresses the inefficiencies of manual retail inventory tracking. B
 * **Frontend**: HTML5, Bootstrap 5, Chart.js
 * **Data Handling**: Pandas
 
-## 📊 Development Status: 70%
+## 📊 Development Status: --%
 
 The core intelligence engine and the primary dashboard interface are functional. The following modules are currently operational:
 
@@ -31,8 +31,9 @@ The core intelligence engine and the primary dashboard interface are functional.
 **Future Roadmap (Under Development):**
 
 * Advanced User Authentication and Role-Based Access Control (RBAC).
-* PDF Export feature for automated inventory reports.
+* Any Type of Document Export feature for automated inventory reports.
 * Extended predictive visualization for seasonal trend analysis.
+* Better Simulization and informative desine.
 
 ## 👥 Project Team (Varendra University)
 
@@ -41,12 +42,13 @@ The core intelligence engine and the primary dashboard interface are functional.
 * **Pritom Kumar Pramanik** (ID: 232311137)
 
 **Supervisor**: Barisha Chowdhury, Lecturer, Dept. of CSE.
+**Supervisor**: Jamil Chowdhury, Lecturer, Dept. of CSE.
 
 ## ⚙️ How to Run 
 ###Globally : https://nurocommerce-retail-platform-team-ml-1.onrender.com/#
 
 *###Locally:
-1. **Clone the repository**: `git clone [YOUR_REPO_URL]`
+1. **Clone the repository**: `git clone [https://github.com/partha-raj-sarkar31/Nurocommerce-Retail_Platform-Team_ML]`
 2. **Install dependencies**: `pip install flask pandas scikit-learn`
 3. **Run the application**: `python app.py`
 4. **Access the dashboard**: Open `http://127.0.0.1:5000/` in your browser.
