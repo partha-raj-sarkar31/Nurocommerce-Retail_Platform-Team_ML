@@ -1,5 +1,5 @@
 Date,Product_ID,Product_Name,Price,Month,Sales,Stock_Level
-2025-01-01,PRD-001,Wireless Headphones,50,1,49,86
+2025-01-01,PRD-001,Wireless Headphones,50,1,49,85
 2025-01-01,PRD-002,Smart Watch X,120,1,27,215
 2025-01-01,PRD-003,Bluetooth Speaker,35,1,17,18
 2025-01-02,PRD-001,Wireless Headphones,50,1,57,141
