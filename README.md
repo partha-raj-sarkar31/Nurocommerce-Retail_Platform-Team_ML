@@ -44,8 +44,8 @@ The core intelligence engine and the primary dashboard interface are functional.
 
 ## ⚙️ How to Run 
 ###Globally : https://nurocommerce-retail-platform-team-ml-1.onrender.com/#
-###Locally
 
+*###Locally:
 1. **Clone the repository**: `git clone [YOUR_REPO_URL]`
 2. **Install dependencies**: `pip install flask pandas scikit-learn`
 3. **Run the application**: `python app.py`
