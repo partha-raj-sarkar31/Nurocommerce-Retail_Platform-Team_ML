@@ -1,4 +1,4 @@
-# NeuroCommerce: AI-Driven Retail Automation and Inventory Intelligence Platform
+# NeuroCommerce: AI-Driven Retail Automation and Inventory Intelligence Platfor
 
 NeuroCommerce is an intelligent, AI-powered inventory platform designed to automate demand forecasting and stock replenishment for small retail businesses. It utilizes a Flask-based engine and a Random Forest Regressor to provide real-time insights into inventory health. This system aims to optimize retail efficiency through modern machine learning techniques and data-driven analysis.
 
